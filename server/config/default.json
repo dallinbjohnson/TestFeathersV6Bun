@@ -1,0 +1,127 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "public": "./public/",
+  "origins": [
+    "http://localhost:3030"
+  ],
+  "paginate": {
+    "default": 20,
+    "max": 5000
+  },
+  "mongodb": {
+    "uri": "mongodb://mongoadmin:secret@localhost:27017/test-feathers-v6-bun",
+    "options": {
+      "authSource": "admin",
+      "retryWrites": true,
+      "w": "majority",
+      "connectTimeoutMS": 300000,
+      "socketTimeoutMS": 3600000
+    }
+  },
+  "redis": {
+    "port": 6379,
+    "host": "127.0.0.1",
+    "username": "default",
+    "password": "my-top-secret",
+    "db": 0
+  },
+  "quickbooks": {
+    "consumerKey": "<enter-client-id>",
+    "consumerSecret": "<enter-client-secret>",
+    "oauthToken": null,
+    "oauthTokenSecret": false,
+    "realmId": null,
+    "useSandbox": true,
+    "debug": true,
+    "minorVersion": null,
+    "oAuthVersion": "2.0",
+    "refreshToken": null,
+    "redirectUri": "http://localhost:3030/quickbooks/authentication/"
+  },
+  "authentication": {
+    "entity": "user",
+    "service": "users",
+    "secret": "Y/XrBNk2r0MIW+nRAT5vgfDQI3kmYv9r",
+    "authStrategies": [
+      "jwt",
+      "local"
+    ],
+    "jwtOptions": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://yourdomain.com",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "usernameField": "email",
+      "passwordField": "password"
+    },
+    "oauth": {
+      "google": {
+        "key": "<Client ID>",
+        "secret": "<Client secret>"
+      },
+      "facebook": {
+        "key": "<Client ID>",
+        "secret": "<Client secret>"
+      },
+      "twitter": {
+        "key": "<Client ID>",
+        "secret": "<Client secret>"
+      },
+      "github": {
+        "key": "<Client ID>",
+        "secret": "<Client secret>"
+      },
+      "auth0": {
+        "key": "<Client ID>",
+        "secret": "<Client secret>"
+      }
+    }
+  },
+  "uploads": {
+    "privateFolder": "../private-files",
+    "services": {
+      "s3": false,
+      "local-private": true,
+      "local-public": true,
+      "google-cloud": false,
+      "bytescale": false,
+      "grid-fs": false
+    },
+    "defaultFileService": "local-public",
+    "blockDeleteDocumentWhenDeleteFileFailed": false,
+    "blockUpdateDocumentWhenReplaceFileFailed": false,
+    "enums": {
+      "STORAGE_TYPES": {
+        "s3": "s3",
+        "local-private": "local-private",
+        "local-public": "local-public",
+        "google-cloud": "google-cloud",
+        "grid-fs": "grid-fs",
+        "bytescale": "bytescale",
+        "others": "others"
+      },
+      "UPLOAD_SERVICES": {
+        "s3": "uploads-s3",
+        "local-private": "upload-local-private",
+        "local-public": "upload-local-public",
+        "google-cloud": "uploads-google",
+        "grid-fs": "uploads-grid-fs",
+        "bytescale": "uploads-bytescale",
+        "others": "uploads-others"
+      },
+      "UPLOAD_PUBLIC_FILE_KEY": "public-file"
+    }
+  },
+  "s3": {
+    "signedUrlExpires": 900
+  },
+  "google-cloud": {
+    "signedUrlExpires": 900
+  },
+  "bytescale": {}
+}

@@ -1,0 +1,104 @@
+{
+  "port": {
+    "__name": "PORT",
+    "__format": "number"
+  },
+  "host": "HOST",
+  "mongodb": {
+    "uri": "MONGO_DB_URI",
+    "options": {
+      "__name": "MONGO_DB_OPTIONS",
+      "__format": "json"
+    }
+  },
+  "redis": {
+    "port": {
+      "__name": "REDIS_PORT",
+      "__format": "number"
+    },
+    "host": "REDIS_HOST",
+    "username": "REDIS_USERNAME",
+    "password": "REDIS_PASSWORD",
+    "db": {
+      "__name": "REDIS_DB",
+      "__format": "number"
+    }
+  },
+  "quickbooks": {
+    "consumerKey": "QUICKBOOKS_CONSUMER_KEY",
+    "consumerSecret": "QUICKBOOKS_CONSUMER_SECRET",
+    "oauthToken": "QUICKBOOKS_OAUTH_TOKEN",
+    "oauthTokenSecret": "QUICKBOOKS_OAUTH_TOKEN_SECRET",
+    "realmId": "QUICKBOOKS_REALM_ID",
+    "useSandbox": {
+      "__name": "QUICKBOOKS_USE_SANDBOX",
+      "__format": "boolean"
+    },
+    "debug": {
+      "__name": "QUICKBOOKS_DEBUG",
+      "__format": "boolean"
+    },
+    "minorVersion": "QUICKBOOKS_MINOR_VERSION",
+    "oAuthVersion": "QUICKBOOKS_O_AUTH_VERSION",
+    "refreshToken": "QUICKBOOKS_REFRESH_TOKEN",
+    "redirectUri": "QUICKBOOKS_REDIRECT_URI"
+  },
+  "authentication": {
+    "secret": "APP_SECRET"
+  },
+  "uploads": {
+    "defaultFileService": "DEFAULT_FILE_SERVICE",
+    "services": {
+      "s3": {
+        "__name": "SUPPORTS_S3",
+        "__format": "boolean"
+      },
+      "google-cloud": {
+        "__name": "SUPPORTS_GOOGLE_CLOUD",
+        "__format": "boolean"
+      },
+      "bytescale": {
+        "__name": "SUPPORTS_BYTESCALE",
+        "__format": "boolean"
+      },
+      "grid-fs": {
+        "__name": "SUPPORTS_GRIDFS",
+        "__format": "boolean"
+      }
+    },
+    "blockDeleteDocumentWhenDeleteFileFailed": {
+      "__name": "BLOCK_DELETE_DOCUMENT_WHEN_DELETE_FILE_FAILED",
+      "__format": "boolean"
+    },
+    "blockUpdateDocumentWhenReplaceFileFailed": {
+      "__name": "BLOCK_UPDATE_DOCUMENT_WHEN_REPLACE_FILE_FAILED",
+      "__format": "boolean"
+    }
+  },
+  "s3": {
+    "region": "AWS_REGION",
+    "endpoint": "AWS_ENDPOINT",
+    "bucket": "AWS_BUCKET_NAME",
+    "accessKeyId": "AWS_ACCESS_KEY",
+    "secretAccessKey": "AWS_SECRET_ACCESS_KEY",
+    "signedUrlExpires": {
+      "__name": "S3_SIGNED_URL_EXPIRES",
+      "__format": "number"
+    }
+  },
+  "google-cloud": {
+    "projectId": "GOOGLE_CLOUD_PROJECT_ID",
+    "clientEmail": "GOOGLE_CLOUD_CLIENT_EMAIL",
+    "privateKey": "GOOGLE_CLOUD_PRIVATE_KEY",
+    "bucket": "GOOGLE_CLOUD_DEFAULT_BUCKET",
+    "signedUrlExpires": {
+      "__name": "GOOGLE_CLOUD_SIGNED_URL_EXPIRES",
+      "__format": "number"
+    }
+  },
+  "bytescale": {
+    "publicKey": "BYTESCALE_PUBLIC_KEY",
+    "secretKey": "BYTESCALE_SECRET_KEY",
+    "accountId": "BYTESCALE_ACCOUNT_ID"
+  }
+}

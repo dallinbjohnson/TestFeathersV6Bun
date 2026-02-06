@@ -1,0 +1,31 @@
+{
+  "name": "test-feathers-v6-bun",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --hot src/app.js"
+  },
+  "dependencies": {
+    "@feathersjs/adapter-commons": "^6.0.0-pre.0",
+    "@feathersjs/authentication": "^6.0.0-pre.0",
+    "@feathersjs/authentication-client": "^6.0.0-pre.0",
+    "@feathersjs/authentication-local": "^6.0.0-pre.0",
+    "@feathersjs/authentication-oauth": "^6.0.0-pre.0",
+    "@feathersjs/configuration": "^6.0.0-pre.0",
+    "@feathersjs/errors": "^6.0.0-pre.0",
+    "@feathersjs/feathers": "^6.0.0-pre.0",
+    "@feathersjs/mongodb": "^6.0.0-pre.0",
+    "@feathersjs/schema": "^6.0.0-pre.0",
+    "@feathersjs/socketio": "^6.0.0-pre.0",
+    "@feathersjs/transport-commons": "^6.0.0-pre.0",
+    "@feathersjs/typebox": "^6.0.0-pre.0",
+    "@sparkz-community/common-utils": "^0.3.10",
+    "feathers-hooks-common": "^8.2.1",
+    "feathers-swagger": "^3.0.0",
+    "ioredis": "^5.9.2",
+    "qs": "^6.14.1",
+    "swagger-ui-dist": "^5.31.0",
+    "tunnel-ssh": "^5.2.0",
+    "winston": "^3.19.0",
+    "winston-console-format": "^1.0.8"
+  }
+}
