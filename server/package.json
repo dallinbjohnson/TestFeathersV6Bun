@@ -21,9 +21,9 @@
     "@sparkz-community/common-utils": "^0.3.10",
     "feathers-hooks-common": "^8.2.1",
     "feathers-swagger": "^3.0.0",
-    "ioredis": "^5.9.2",
-    "qs": "^6.14.1",
-    "swagger-ui-dist": "^5.31.0",
+    "ioredis": "^5.9.3",
+    "qs": "^6.15.0",
+    "swagger-ui-dist": "^5.31.1",
     "tunnel-ssh": "^5.2.0",
     "winston": "^3.19.0",
     "winston-console-format": "^1.0.8"
